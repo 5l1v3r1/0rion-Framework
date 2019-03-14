@@ -1,11 +1,12 @@
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/crDBVqg/0rion.png" alt="0rion" border="0"></a>
-///////////////////////////////////////////////////////////////////////////////////////////////
+
 Orion Framework Kali Linux Edition is intended for and was tested on Kali linux
 Orion Framework is a recon and attack framework.Orion Framework currently contains one main module "Orion's toolbelt"
 There are many other modules in development. Orion's Toolbelt consists of many modules that preform recon for personal,
 domain, and network information.
 
 Here is a list of what Orion can preform on the network and domain end of recon: 
+ 
  ping target
 
 detect operating system
