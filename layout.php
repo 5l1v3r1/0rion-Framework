@@ -87,8 +87,9 @@
 		<ul class="toggle">
                     <li class="icn_settings"><a href="index.php">Nmap Scanner Menu</a></li>
 			<li class="icn_security"><a href="vuln.php">Web Scanner</a></li>
-                     <li class="icn_exploit"><a href="uni.php">URL Fuzzer</a></li>
-                     <li class="icn_security"><a href="cms.php">BlindElephant Scan</a></li>
+			<li class="icn_security"><a href="nikto.php">Nikto</a></li>
+                        <li class="icn_exploit"><a href="uni.php">URL Fuzzer</a></li>
+                        <li class="icn_security"><a href="cms.php">BlindElephant Scan</a></li>
 			<li class="icn_settings"><a href="sweep.php">Ping Sweep</a></li>
                        
                         
