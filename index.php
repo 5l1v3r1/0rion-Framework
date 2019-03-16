@@ -49,7 +49,22 @@ require_once 'u.php';
                 <p><input  type="checkbox" name="options[]" value=" -sV -Pn -T4 --script firewalk.nse --traceroute " />Firewalk</p>
                 <p><input  type="checkbox" name="options[]" value=" -sV -Pn -T4 --script firewall-bypass.nse " />Detect a vuln in netfilter and other firewalls that use helpers to dynamically open ports for protocols such as ftp and sip.</p>
                 <p><input  type="checkbox" name="options[]" value=" -sV -p 21 --script ftp-brute.nse " />brute force FTP servers</p>
-                 
+                <p><input  type="checkbox" name="options[]" value=" -sV -p 21 --script ftp-proftpd-backdoor.nse " />Test for  ProFTPD 1.3.3c backdoor</p>
+                <p><input  type="checkbox" name="options[]" value=" -sV -p 21 --script ftp-vsftpd-backdoor.nse " />Test for vsFTPd 2.3.4 backdoor</p>
+                <p><input  type="checkbox" name="options[]" value=" -sV -p 21 --script ftp-vuln-cve2010-4221.nse " />Check for a stack-based buffer overflow in ProFTPD server (CVE-2010-4221)</p>
+                <p><input  type="checkbox" name="options[]" value=" -sV --script http-adobe-coldfusion-apsa1301.nse " />exploit an authentication bypass vulnerability in a Adobe Coldfusion Server</p>
+                <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-brute.nse " />brute force password auditing against http basic, digest and ntlm authentication</p>
+                <p><input  type="checkbox" name="options[]" value=" -sV --script http-dlink-backdoor.nse " />Detect a firmware backdoor on some D-Link routers</p>
+                <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-fileupload-exploiter.nse " />Exploit insecure file upload forms in web applications using various techniques</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-form-brute.nse " />Perform brute force password auditing against http form-based authentication.</p> 
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-huawei-hg5xx-vuln.nse " />Detect Huawei modems models vulnerable to a remote credential and information disclosure vulnerability</p> 
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80,8080 --script http-iis-webdav-vuln.nse " />Detect Huawei modems models vulnerable to a remote credential and information disclosure vulnerability</p> 
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-joomla-brute.nse " />brute force Joomla web CMS installations</p> 
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 8080 --script http-proxy-brute.nse " />brute force password guessing against HTTP proxy server</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-shellshock.nse " />Attempt to exploit the shellshock vulnerability in web applications</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p80,443,8222,8333 --script http-vmware-path-vuln.nse " />Check for a path-traversal vulnerability in VMWare ESX, ESXi, and Server (CVE-2009-3733)</p>    
+
+              
        </fieldset>
         
 
