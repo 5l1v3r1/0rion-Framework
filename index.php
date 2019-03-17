@@ -2,16 +2,16 @@
 require_once 'layout.php';
 require_once 'u.php';
 ?>
-   
+
 <section id="main" class="column">
-		
+
 		<h4 class="alert_info">Orion's Tool Belt.</h4>
-		
-		
-		
-		
+
+
+
+
 		<div class="clear"></div>
-		
+
 		<article class="module width_full">
 			<header><h3>Nmap Scan</h3></header>
 				<div class="module_content">
@@ -56,46 +56,83 @@ require_once 'u.php';
                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-brute.nse " />brute force password auditing against http basic, digest and ntlm authentication</p>
                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-dlink-backdoor.nse " />Detect a firmware backdoor on some D-Link routers</p>
                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-fileupload-exploiter.nse " />Exploit insecure file upload forms in web applications using various techniques</p>
-                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-form-brute.nse " />Perform brute force password auditing against http form-based authentication.</p> 
-                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-huawei-hg5xx-vuln.nse " />Detect Huawei modems models vulnerable to a remote credential and information disclosure vulnerability</p> 
-                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80,8080 --script http-iis-webdav-vuln.nse " />Detect Huawei modems models vulnerable to a remote credential and information disclosure vulnerability</p> 
-                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-joomla-brute.nse " />brute force Joomla web CMS installations</p> 
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-form-brute.nse " />Perform brute force password auditing against http form-based authentication.</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-huawei-hg5xx-vuln.nse " />Detect Huawei modems models vulnerable to a remote credential and information disclosure vulnerability</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80,8080 --script http-iis-webdav-vuln.nse " />Detect Huawei modems models vulnerable to a remote credential and information disclosure vulnerability</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-joomla-brute.nse " />brute force Joomla web CMS installations</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV -p 8080 --script http-proxy-brute.nse " />brute force password guessing against HTTP proxy server</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV --script http-shellshock.nse " />Attempt to exploit the shellshock vulnerability in web applications</p>
-                 <p><input  type="checkbox" name="options[]" value=" -sV -p80,443,8222,8333 --script http-vmware-path-vuln.nse " />Check for a path-traversal vulnerability in VMWare ESX, ESXi, and Server (CVE-2009-3733)</p>    
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p80,443,8222,8333 --script http-vmware-path-vuln.nse " />Check for a path-traversal vulnerability in VMWare ESX, ESXi, and Server (CVE-2009-3733)</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-vuln-cve2006-3392.nse " />Exploit a file disclosure vulnerability in Webmin (CVE-2006-3392)</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-vuln-cve2017-5638.nse " />Detect whether the specified URL is vulnerable to the Apache Struts Remote Code Execution Vulnerability</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 16992 --script http-vuln-cve2017-5689.nse " />Detect if a system is vulnerable to the INTEL-SA-00075 privilege escalation vulnerability</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-vuln-cve2017-1001000.nse " />Attempt to detect a privilege escalation vulnerability in Wordpress that allows unauthenticated users to inject content in posts</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 7547 --script http-vuln-misfortune-cookie.nse " />Detect the RomPager 4.07 Misfortune Cookie vulnerability by safely exploiting it</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-vuln-wnr1000-creds.nse " />test a vulnerability in WNR 1000 series routers that allows an attacker to retrieve administrator credentials with the router interface</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-wordpress-brute.nse " />brute force Wordpress CMS/blog installations</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sU -p 4569 --script iax2-brute.nse " />brute force password auditing against the Asterisk IAX2 protocol.</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 143,993 --script iax2-brute.nse " />brute force IMAP servers using either LOGIN, PLAIN, CRAM-MD5, DIGEST-MD5 or NTLM authentication</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 9088 --script informix-brute.nse " />brute force password auditing against IBM Informix Dynamic Server</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 623 --script ipmi-brute.nse " />brute force password auditing against IPMI RPC server</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 6667 --script irc-brute.nse " />brute force IRC servers</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 6667 --script irc-sasl-brute.nse " />brute force IRC servers supporting SASL authentication</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script iscsi-brute.nse " />brute force iSCSI targets</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 11211 --script membase-brute.nse " />brute force Couchbase Membase servers</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 8728 --script mikrotik-routeros-brute.nse " />brute force Mikrotik RouterOS devices with the API RouterOS interface enabled</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 51010 --script mmouse-brute.nse " />brute force RPA Tech Mobile Mouse servers</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 27017 --script mongodb-brute.nse " />brute force MongoDB database</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script mysql-brute.nse " />brute force MySQL database</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script mysql-vuln-cve2012-2122.nse " />Attempt to bypass authentication in MySQL and MariaDB servers by exploiting CVE2012-2122</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script netbus-brute.nse " />brute force Netbus backdoor service</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 9929 --script nping-brute.nse " />brute force an Nping Echo service</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV --script pcanywhere-brute.nse " />brute force the pcAnywhere remote access protocol</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 5432 --script pgsql-brute.nse " />brute force pgsql</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 512 --script rexec-brute.nse " />brute force classic UNIX rexec service</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 513 --script rlogin-brute.nse " />brute force password auditing against the classic UNIX rlogin service</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 2002 --script rpcap-brute.nse " />brute force WinPcap Remote Capture Daemon</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 5060 --script sip-brute.nse " />brute force Session Initiation Protocol</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 445 --script smb-brute.nse " />brute force SMB</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 445 --script smb-vuln-cve-2017-7494.nse " />Check if target machines are vulnerable to the arbitrary shared library load vulnerability CVE-2017-7494</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 25 --script smtp-brute.nse " />brute force SMTP servers using either LOGIN, PLAIN, CRAM-MD5, DIGEST-MD5 or NTLM authentication</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 1080 --script socks-brute.nse " />brute force password auditing against SOCKS 5 proxy servers</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 443 --script ssl-heartbleed.nse " />Detect if target is vulnerable to the OpenSSL Heartbleed bug (CVE-2014-0160)</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 443 --script tls-ticketbleed.nse " />Detect whether the target is vulnerable to the F5 Ticketbleed bug (CVE-2016-9244)</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 2401 --script tso-brute.nse " />brute force TSO account</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 902 --script vmauthd-brute.nse " />brute force VMWare Authentication Daemon</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 5900 --script vnc-brute.nse " />brute force VNC servers</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 5222 --script xmpp-brute.nse " />brute force XMPP (Jabber) instant messaging servers</p>
 
-              
        </fieldset>
-        
+
 
 				<div class="clear"></div>
 				</div>
 			<footer>
 				<div class="submit_link">
-					
+
                                     <input type="submit" name="submit" value="Start" class="alt_btn" id="submit" >
                                     <input type="reset" value="Reset" id="reset"> </a>
 				</div>
 			</footer>
-                        
+
 		</article><!-- end of post new article -->
-               
+
 
                 <?php
               if(isset($_POST['submit'])){
                $url = $_POST['url'];
 
  if($url==''){
-                   
+
                    echo "<script type='text/javascript'>$.msg({fadeIn : 500,fadeOut : 500,bgPath : 'dlgs/',  content : 'You Have not entered a TARGET URL.Please enter a TARGET URL..'});</script>";
               }
-               
+
  else {
       echo "<script type='text/javascript'>$.msg({ fadeIn : 500,fadeOut : 500, bgPath : 'dlgs/',  content : 'Doing Nmap Scan for $url ! results located in the result section'});</script>";
-         
+
       require_once 'loading.php';
 	if(preg_match("#;|\||&|%#", $url)){ die("Bad, very bad, this characters are not accepted: ; | & %");}
-	
+
 
 	foreach ($_POST['options'] as $key => $value) {
 		if(preg_match("#;|\||&|%#", $value)){
@@ -103,45 +140,45 @@ require_once 'u.php';
 		}
 $str.=$value;
 
-		
+
 	}
 $url = trim($url); //remove space from start and end of url
                if(substr(strtolower($url), 0, 7) == "http://") $url = substr($url, 7); // remove http:// if included
                 if(substr(strtolower($url), 0, 8) == "https://") $url = substr($url, 8);
-      
+
                      $url_parts = explode("/", $url);
                      $url = $url_parts[0];
-                    
+
 shell("sudo nmap $str $url");
-	
-         
-   
+
+
+
          echo '</div>
                                     <footer>
 				<div align="left">
-					
+
 					<h3>Finished</h3>
 				</div>
 			</footer>
 		</article><!-- end of styles article -->
                  <h4 class="alert_success">Scan Complete </h4>
-                 
+
  ';
-     
+
         echo "<script type='text/javascript'>$.msg({ fadeIn : 500,fadeOut : 500, bgPath : 'dlgs/',  content : 'Nmap Done ! results located in the result tab'});</script>";
-            
-     
-               
-          
-                     
+
+
+
+
+
  }
-}            
-    
-                
+}
+
+
  ?>
-      	
-		
+
+
 	</section>
-    
+
 </body>
 </html>
