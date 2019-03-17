@@ -56,11 +56,11 @@ require_once 'u.php';
                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-brute.nse " />brute force password auditing against http basic, digest and ntlm authentication</p>
                 <p><input  type="checkbox" name="options[]" value=" -sV --script http-dlink-backdoor.nse " />Detect a firmware backdoor on some D-Link routers</p>
                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-fileupload-exploiter.nse " />Exploit insecure file upload forms in web applications using various techniques</p>
-                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-form-brute.nse " />Perform brute force password auditing against http form-based authentication.</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-form-brute.nse " />brute force http form-based authentication.</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV --script http-huawei-hg5xx-vuln.nse " />Detect Huawei modems models vulnerable to a remote credential and information disclosure vulnerability</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV -p 80,8080 --script http-iis-webdav-vuln.nse " />Check for a vulnerability in IIS 5.1/6.0 that allows arbitrary users to access secured WebDAV folders</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV --script http-joomla-brute.nse " />brute force Joomla web CMS installations</p>
-                 <p><input  type="checkbox" name="options[]" value=" -sV -p 8080 --script http-proxy-brute.nse " />brute force password guessing against HTTP proxy server</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 8080 --script http-proxy-brute.nse " />brute force HTTP proxy server</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV --script http-shellshock.nse " />Attempt to exploit the shellshock vulnerability in web applications</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV -p80,443,8222,8333 --script http-vmware-path-vuln.nse " />Check for a path-traversal vulnerability in VMWare ESX, ESXi, and Server (CVE-2009-3733)</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV --script http-vuln-cve2006-3392.nse " />Exploit a file disclosure vulnerability in Webmin (CVE-2006-3392)</p>
@@ -70,7 +70,7 @@ require_once 'u.php';
                  <p><input  type="checkbox" name="options[]" value=" -sV -p 7547 --script http-vuln-misfortune-cookie.nse " />Detect the RomPager 4.07 Misfortune Cookie vulnerability by safely exploiting it</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-vuln-wnr1000-creds.nse " />test a vulnerability in WNR 1000 series routers that allows an attacker to retrieve administrator credentials with the router interface</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV --script http-wordpress-brute.nse " />brute force Wordpress CMS/blog installations</p>
-                 <p><input  type="checkbox" name="options[]" value=" -sU -p 4569 --script iax2-brute.nse " />brute force password auditing against the Asterisk IAX2 protocol.</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sU -p 4569 --script iax2-brute.nse " />brute force password auditing against the Asterisk IAX2 protocol</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV -p 143,993 --script iax2-brute.nse " />brute force IMAP servers using either LOGIN, PLAIN, CRAM-MD5, DIGEST-MD5 or NTLM authentication</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV -p 9088 --script informix-brute.nse " />brute force password auditing against IBM Informix Dynamic Server</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV -p 623 --script ipmi-brute.nse " />brute force password auditing against IPMI RPC server</p>
