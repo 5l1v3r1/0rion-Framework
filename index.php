@@ -58,7 +58,7 @@ require_once 'u.php';
                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-fileupload-exploiter.nse " />Exploit insecure file upload forms in web applications using various techniques</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV -p 80 --script http-form-brute.nse " />Perform brute force password auditing against http form-based authentication.</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV --script http-huawei-hg5xx-vuln.nse " />Detect Huawei modems models vulnerable to a remote credential and information disclosure vulnerability</p>
-                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80,8080 --script http-iis-webdav-vuln.nse " />Detect Huawei modems models vulnerable to a remote credential and information disclosure vulnerability</p>
+                 <p><input  type="checkbox" name="options[]" value=" -sV -p 80,8080 --script http-iis-webdav-vuln.nse " />Check for a vulnerability in IIS 5.1/6.0 that allows arbitrary users to access secured WebDAV folders</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV --script http-joomla-brute.nse " />brute force Joomla web CMS installations</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV -p 8080 --script http-proxy-brute.nse " />brute force password guessing against HTTP proxy server</p>
                  <p><input  type="checkbox" name="options[]" value=" -sV --script http-shellshock.nse " />Attempt to exploit the shellshock vulnerability in web applications</p>
