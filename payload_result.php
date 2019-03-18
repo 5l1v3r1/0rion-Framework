@@ -393,7 +393,6 @@ echo '<code style="float:top;backface-visibility: visible;background-color:#BBB7
                     
                 }
                  $host=$_SERVER['SERVER_ADDR'];
-	        echo "<p>To Open Terminal Click <a target='_blank' href='https://$host:4200/'>here</a></p>";
                         
                 
  }
