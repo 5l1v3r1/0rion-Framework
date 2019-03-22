@@ -67,7 +67,7 @@ require_once 'u.php';
     </fieldset>
      <fieldset>
          <label>Step 2b.</label>Suppose u’ve successfully uploaded the PHP backdoor with the address <b>http://192.168.2.29/upload/yourshell.php</b>
-         where upload is the directory on the server where you uploaded your shell.<?php $host=$_SERVER['SERVER_ADDR'];echo "<p>Open Terminal  <a target='_blank' href='https://$host:4200/'>here</a></p>";?>
+         where upload is the directory on the server where you uploaded your shell.
 
      </fieldset>
     <fieldset>
