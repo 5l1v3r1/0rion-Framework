@@ -13,7 +13,7 @@ require_once 'u.php';
 		<div class="clear"></div>
 
 		<article class="module width_full">
-			<header><h3>Nmap Scan</h3></header>
+			<header><h3>Nmap Module</h3></header>
 				<div class="module_content">
 <form name="form1" action="" method="post"><fieldset>
 		<legend>Target:</legend>
